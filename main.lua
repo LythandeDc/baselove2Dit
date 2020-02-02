@@ -24,6 +24,7 @@ function love.draw()
     
 end -- END DRAW
 
+-- KEY PRESSED
 function love.keypressed(key)
   print(key)
-end
+end -- END KEY PRESSED
