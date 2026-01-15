@@ -4,10 +4,26 @@
 ![Lua](https://img.shields.io/badge/Lua-5.1-blue?style=flat-square&logo=lua)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-Un template completo e strutturato per iniziare rapidamente nuovi progetti con **Love2D**.
+Un template per iniziare rapidamente nuovi progetti con **Love2D**. Disponibile in due versioni: **semplice** per principianti e **avanzata** con sistema di stati e utility.
+
+## Versioni Disponibili
+
+| Versione | File | Descrizione |
+|----------|------|-------------|
+| **Semplice** | `main_simple.lua` | Template minimale con struttura base (load/update/draw) |
+| **Avanzata** | `main.lua` | Sistema stati, utility functions, configurazione completa |
+
+Per usare la versione semplice, rinomina `main_simple.lua` in `main.lua`.
 
 ## Caratteristiche
 
+### Template Semplice
+- Struttura base Love2D (load, update, draw, keypressed)
+- Pixel Art Ready
+- Debug ZeroBraneStudio
+- Sezioni organizzate per variabili e funzioni
+
+### Template Avanzato
 - **Gestione Stati** - Sistema di game states (menu, gameplay, pause, etc.)
 - **Utility Functions** - Funzioni comuni pronte all'uso (collisioni, math, etc.)
 - **Configurazione Completa** - `conf.lua` con tutte le opzioni documentate
@@ -36,10 +52,11 @@ Un template completo e strutturato per iniziare rapidamente nuovi progetti con *
 
 ```
 baselove2Dit/
-├── main.lua      # Entry point e logica principale
-├── conf.lua      # Configurazione Love2D
-├── states.lua    # Gestore degli stati di gioco
-├── utils.lua     # Funzioni utility
+├── main.lua         # Template avanzato (stati, utility)
+├── main_simple.lua  # Template semplice (minimale)
+├── conf.lua         # Configurazione Love2D
+├── states.lua       # Gestore degli stati di gioco
+├── utils.lua        # Funzioni utility
 └── README.md
 ```
 
