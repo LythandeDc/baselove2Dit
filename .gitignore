@@ -1,0 +1,27 @@
+# Claude Code
+/.claude/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# ZeroBrane Studio
+*.lua.bak
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Love2D builds
+*.love
+builds/
+release/
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*~
