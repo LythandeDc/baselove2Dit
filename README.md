@@ -8,12 +8,12 @@ Un template per iniziare rapidamente nuovi progetti con **Love2D**. Disponibile 
 
 ## Versioni Disponibili
 
-| Versione | File | Descrizione |
-|----------|------|-------------|
-| **Semplice** | `main_simple.lua` | Template minimale con struttura base (load/update/draw) |
-| **Avanzata** | `main.lua` | Sistema stati, utility functions, configurazione completa |
+| Versione | Cartella | Descrizione |
+|----------|----------|-------------|
+| **Semplice** | `simple/` | Template minimale con struttura base (load/update/draw) |
+| **Avanzata** | `advanced/` | Sistema stati, utility functions, configurazione completa |
 
-Per usare la versione semplice, rinomina `main_simple.lua` in `main.lua`.
+Per usare una versione, copia il contenuto della cartella desiderata nel tuo progetto.
 
 ## Caratteristiche
 
@@ -43,20 +43,26 @@ Per usare la versione semplice, rinomina `main_simple.lua` in `main.lua`.
    cd baselove2Dit
    ```
 
-2. **Avvia il progetto**
+2. **Scegli il template** e copia i file nel tuo progetto
    ```bash
-   love .
+   # Per il template semplice
+   love simple
+
+   # Per il template avanzato
+   love advanced
    ```
 
 ## Struttura del Progetto
 
 ```
 baselove2Dit/
-├── main.lua         # Template avanzato (stati, utility)
-├── main_simple.lua  # Template semplice (minimale)
-├── conf.lua         # Configurazione Love2D
-├── states.lua       # Gestore degli stati di gioco
-├── utils.lua        # Funzioni utility
+├── simple/          # Template semplice
+│   └── main.lua
+├── advanced/        # Template avanzato
+│   ├── main.lua     # Entry point con sistema stati
+│   ├── conf.lua     # Configurazione Love2D
+│   ├── states.lua   # Gestore degli stati di gioco
+│   └── utils.lua    # Funzioni utility
 └── README.md
 ```
 
